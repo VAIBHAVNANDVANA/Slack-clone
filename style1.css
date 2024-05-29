@@ -1,0 +1,179 @@
+body {
+    margin: 20;
+    font-family: sans-serif;
+    color: #ffffff;
+    background: #c8c8c8;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    color:  #aaa;
+  }
+  
+  #channels-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    justify-content: center;
+  }
+  .login-wrap {
+    width: 100%;
+    margin: auto;
+    max-width: 525px;
+    min-height: 670px;
+    position: relative;
+    /* background: url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) */
+      /* no-repeat center; */
+    background:rgba(30, 45, 86, 0.9) no-repeat center ;     
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+  .channel-card {
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .channel-card h3 {
+    margin-bottom: 5px;
+  }
+  
+  .channel-card p {
+    margin-bottom: 10px;
+    color:  #aaa;
+  }
+  
+  .join-button {
+    /* background-color: #4CAF50; Green */
+    background-color:#1161ee;
+    border: none;
+    color: white;
+    /* color: rgba(40, 57, 101, 0.9); */
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 25px;
+
+    background: #1161ee;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .join-button:hover {
+    background:#1454c4;
+      cursor: pointer;
+  }
+
+
+
+  #add-channel-button {
+    background-color: #1161ee;
+    border: none;
+    color: #1161ee;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+    background: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+  
+    /* Centering styles */
+    margin: 0 auto; /* Center horizontally within its container */
+    display: block;  /* Make the button a block-level element for full width */
+  }
+  
+  #add-channel-button:hover{
+    background:#1454c4;
+      cursor: pointer;
+  }
+
+  #logout-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent; /* Make background transparent */
+    border: none;
+    color: #fff; /* White text color */
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px 10px; /* Adjust padding as needed */
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  #logout-button:hover {
+    color: #ccc; /* Light gray hover color */
+    text-decoration: underline; /* Add underline on hover */
+  }
+  #messages-container {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    max-height: 300px; /* Limit message container height */
+    overflow-y: scroll; /* Enable scrolling for long message lists */
+  }
+  
+  .message {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  
+  .sender {
+    font-weight: bold;
+    margin-right: 5px;
+    color: #333;
+  }
+  
+  .timestamp {
+    font-size: 0.8em;
+    color: #aaa;
+    margin-left: auto; /* Align timestamp to the right */
+  }
+  
+  #message-form {
+    margin-top: 10px;
+    display: flex;
+  }
+  
+  #message-input {
+    flex: 1; /* Make input field take up most of the space */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  #message-button {
+    background-color: #1161ee;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+  }
+  
+  #message-button:hover {
+    background: #1454c4;
+    cursor: pointer;
+  }
+  
